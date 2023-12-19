@@ -84,7 +84,7 @@ const CardComponent = ({
             <IconButton onClick={handlePhoneClick}>
               <PhoneIcon />
             </IconButton>
-            {userData.loggedIn && (userData.userData._id === userId) ? <IconButton onClick={handleClickEditCard}>
+            {userData.loggedIn && (userData.userData._id === userId || userData.userData.isAdmin) ? <IconButton onClick={handleClickEditCard}>
               <CreateIcon />
             </IconButton> : ""}
           </Box>
