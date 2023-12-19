@@ -26,12 +26,17 @@ const CardComponent = ({
   alt,
   like,
   cardNumber,
+  userId,
   onDeleteCard,
   onEditCard,
   onLikeCard,
   onShowCard,
 }) => {
   const userData = useSelector((bigPie) => bigPie.authSlice);
+
+  // console.log("xx", userData.userData._id);
+  // console.log("xx", userId);
+  
 
   const handlePhoneClick = () => {
     onShowCard(_id);
@@ -79,7 +84,7 @@ const CardComponent = ({
             <IconButton onClick={handlePhoneClick}>
               <PhoneIcon />
             </IconButton>
-            {userData.loggedIn ? <IconButton onClick={handleClickEditCard}>
+            {userData.loggedIn && (userData.userData._id === userId) ? <IconButton onClick={handleClickEditCard}>
               <CreateIcon />
             </IconButton> : ""}
           </Box>

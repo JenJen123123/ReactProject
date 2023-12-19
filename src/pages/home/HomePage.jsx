@@ -78,6 +78,7 @@ return (
             alt={card.image.alt}
             like={card.likes}
             cardNumber={card.cardNumber}
+            userId={card.user_id}
             onDeleteCard={handleDeleteCard}
             onEditCard={handleEditCard}
             onLikeCard={handleLikeCard}

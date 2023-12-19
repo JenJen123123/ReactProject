@@ -37,7 +37,7 @@ const CreateCardPage = () => {
           zip: +inputsValue.zip,
         },
       });
-      toast("You logged out successfully 👌", {
+      toast("Your card created 👌", {
         position: "top-right",
         autoClose: 5000,
         hideProgressBar: false,
