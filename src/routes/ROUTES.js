@@ -10,5 +10,6 @@ const ROUTES = {
   SANDBOX: "/sandbox",
   CARD: "/card",
   UPDATE: "/update",
+  MYCARDS: "/MyCards",
 };
 export default ROUTES;

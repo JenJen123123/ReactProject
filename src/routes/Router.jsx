@@ -14,6 +14,7 @@ import Logout from "../pages/login/Logout";
 import FavCards from "../pages/Fav/FavCards";
 import ShowCard from "../layout/CardInfo/ShowCard";
 import UpdateUser from "../pages/Sandbox/UpdateUser"
+import MyCards from "../pages/MyCards/MyCards";
 
 const Router = () => {
   return (
@@ -24,6 +25,7 @@ const Router = () => {
       <Route path={ROUTES.ABOUT} element={<About />} />
       <Route path={ROUTES.LOGOUT} element={<Logout />} />
       <Route path={ROUTES.FAV} element={<FavCards />} />
+      <Route path={ROUTES.MYCARDS} element={<MyCards />} />
       <Route
         path={ROUTES.CREATECARD}
         element={

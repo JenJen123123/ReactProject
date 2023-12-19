@@ -11,6 +11,7 @@ const alwaysLinks = [
 
 const loggedInLinks = [
   { to: ROUTES.FAV, children: "Fav Cards" },
+  { to: ROUTES.MYCARDS, children: "My cards" },
   { to: ROUTES.LOGOUT, children: "Logout" },
 ];
 
